@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+    <link href="/css/main.css" rel="stylesheet">
+    <script type="text/javascript" src="/js/vendor/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/plugins.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/chat.js"></script>
+  </head>
+<body>
+  <div id="chat">
+    <div id="nickname">
+      <form id="set-nickname" class="wrap">
+        <p>Please type in your nickname and press enter.</p>
+        <input id="nick">
+        <p id="nickname-err">Nickname already in use</p>
+    </form>
+    </div>
+    <div id="connecting">
+      <div class="wrap">Connecting to socket.io server</div>
+    </div>
+    <p id="connect-err">
+    	Failed to connect to socket.io server
+    </p>
+    <div id="messages">
+      <div id="nicknames"><span>Online:</span></div>
+      <div id="lines"></div>
+    </div>
+    <form id="send-message">
+      <input id="message">
+      <button>Send</button>
+    </form>
+  </div>
+</body>
+</html>

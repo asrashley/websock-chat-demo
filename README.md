@@ -49,6 +49,11 @@ Starting the app with:
     
 should create an HTTP server on localhost:3000
 
+The CSS files are auto-generated from Stylus templates when using the node.js
+server, but are *not* auto-generated when using Python. You will need to use the
+node.js server at least once (and visit <http://localhost:3000/>) after cloning
+the repo or after changing the Stylus templates.
+
 Client application
 ------------------
 The client application is a simple HTML5 + JavaScript web application. It
